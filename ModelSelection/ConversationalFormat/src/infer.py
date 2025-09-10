@@ -3,8 +3,13 @@ import torch
 from unsloth import FastLanguageModel
 from unsloth.chat_templates import get_chat_template
 
-def load_model(model_path):
-    """Load the fine-tuned model and tokenizer"""
+def load_model(model_path, chat_template="phi-4"):
+    """Load the fine-tuned model and tokenizer
+    
+    Args:
+        model_path: Path to the model checkpoint
+        chat_template: Chat template to use (e.g., 'phi-4', 'alpaca', 'chatml'). Default: 'phi-4'
+    """
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=model_path,
         max_seq_length=2048,
@@ -13,7 +18,7 @@ def load_model(model_path):
     
     tokenizer = get_chat_template(
         tokenizer,
-        chat_template="phi-4",
+        chat_template=chat_template,
     )
     
     return model, tokenizer
@@ -71,6 +76,9 @@ def main():
                         help='Path to the fine-tuned model')
     parser.add_argument('--input', type=str, required=True,
                         help='Input Classical Chinese text')
+    parser.add_argument('--chat-template', type=str, default='phi-4',
+                        choices=['phi-4', 'alpaca', 'chatml', 'zephyr', 'mistral', 'llama-2'],
+                        help='Chat template to use for formatting prompts (default: phi-4)')
     
     # Generation parameters
     parser.add_argument('--max-new-tokens', type=int, default=256,
@@ -91,7 +99,7 @@ def main():
         parser.error("max-new-tokens must be > 0")
     
     # Load model and tokenizer
-    model, tokenizer = load_model(args.model_path)
+    model, tokenizer = load_model(args.model_path, args.chat_template)
     
     # Generate translation
     translation = generate_translation(

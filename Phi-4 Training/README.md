@@ -99,7 +99,9 @@ python src/train.py \
 ```bash
 python src/infer.py \
     --model_path "path/to/checkpoint" \
-    --input "Your Classical Chinese text here"
+    --input "Your Classical Chinese text here" \
+    --temperature 1.5 \
+    --min_p 0.1
 ```
 
 ### Evaluation

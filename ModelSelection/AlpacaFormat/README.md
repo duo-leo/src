@@ -48,7 +48,10 @@ python src/train.py \
 ```bash
 python src/infer.py \
     --model-path "path/to/lora_model" \
-    --input "Your Classical Chinese text here"
+    --input "Your Classical Chinese text here" \
+    --max-new-tokens 256 \
+    --temperature 0.7 \
+    --top-p 0.95
 ```
 
 ### Evaluation

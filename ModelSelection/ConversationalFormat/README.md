@@ -1,6 +1,6 @@
-# Phi-4 Training with Conversational Format
+# Model Training with Conversational Format
 
-This project fine-tunes the Phi-4 model for Classical Chinese translation using a conversational format.
+This project fine-tunes the models with Conversational Format for Classical Chinese translation using a conversational format.
 
 ## Requirements
 
@@ -72,9 +72,14 @@ python src/train.py \
 ### Inference
 
 ```bash
+# Basic usage
 python src/infer.py \
     --model-path "path/to/lora_model" \
-    --input "Your Classical Chinese text here"
+    --input "Your Classical Chinese text here" \
+    --chat-template "phi-4" \
+    --max-new-tokens 256 \
+    --temperature 0.7 \
+    --top-p 0.95
 ```
 
 ### Evaluation
