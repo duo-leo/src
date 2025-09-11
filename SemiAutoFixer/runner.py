@@ -4,7 +4,7 @@ import os
 from utils.llm_fixer import GeminiStrategy, GeminiSeleniumStrategy
 import pandas as pd
 
-DIR_PATH = 'WORKING_FOLDER/DiSanHanNomHue/'
+DIR_PATH = 'WORKING_FOLDER/NewProject/'
 EXCEL_PATH = ''#'WORKING_FOLDER/quan3.xlsx'
 INITIAL_CHECK = False
 

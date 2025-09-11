@@ -24,6 +24,7 @@ regex>=2021.0.0
 
 # Data manipulation and file handling
 openpyxl>=3.0.9  # For Excel file support
+maturin
 
 # Optional: For better performance with large models
 # accelerate>=0.20.0  # Uncomment if using large language models

@@ -43,7 +43,7 @@ def install_requirements():
         return False
     
     return run_command(
-        f"{sys.executable} -m pip install -r requirements.txt",
+        f'"{sys.executable}" -m pip install -r requirements.txt',
         "Installing required packages"
     )
 
@@ -58,44 +58,6 @@ def setup_directories():
         Path(directory).mkdir(parents=True, exist_ok=True)
         print(f"📁 Created directory: {directory}")
     
-    return True
-
-def create_config_template():
-    """Create a configuration template"""
-    config_content = '''"""
-SemiAutoFixer Configuration Template
-
-Copy this file to config.py and modify the settings as needed.
-"""
-
-# Project Settings
-DEFAULT_PROJECT_DIR = "WORKING_FOLDER/NewProject/"
-DEFAULT_EXCEL_PATH = ""  # Leave empty to use text files
-
-# Processing Settings
-INITIAL_CHECK_DEFAULT = True  # Set to True for data validation
-ENABLE_LLM_PROCESSING = False  # Set to True to enable LLM features
-
-# LLM Settings (only needed if ENABLE_LLM_PROCESSING = True)
-GEMINI_API_KEY = "your_gemini_api_key_here"  # Get from Google AI Studio
-OPENAI_API_KEY = "your_openai_api_key_here"  # Get from OpenAI
-
-# File Encoding Settings
-DEFAULT_ENCODING = "utf-8"
-
-# Processing Options
-MAX_BATCH_SIZE = 1000  # Maximum number of entries to process at once
-SAVE_INTERVAL = 100    # Save progress every N entries
-
-# Output Settings
-VERBOSE_LOGGING = True
-SAVE_INTERMEDIATE_RESULTS = True
-'''
-    
-    with open("config_template.py", "w", encoding="utf-8") as f:
-        f.write(config_content)
-    
-    print("📝 Created config_template.py")
     return True
 
 def verify_installation():
@@ -148,13 +110,8 @@ def main():
     if not setup_directories():
         return False
     
-    # Step 4: Create configuration template
-    print("\nStep 4: Creating configuration template...")
-    if not create_config_template():
-        return False
-    
-    # Step 5: Verify installation
-    print("\nStep 5: Verifying installation...")
+    # Step 4: Verify installation
+    print("\nStep 4: Verifying installation...")
     if not verify_installation():
         print("❌ Installation verification failed. Please check the error messages above.")
         return False

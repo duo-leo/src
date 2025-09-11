@@ -56,9 +56,6 @@ def setup_working_directory():
     
     # Create example subdirectories
     example_dirs = [
-        "DiSanHanNomHue",
-        "CauDoiWiki", 
-        "DoiLien",
         "NewProject"
     ]
     
