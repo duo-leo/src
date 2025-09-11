@@ -51,7 +51,6 @@ def setup_directories():
     """Set up necessary directories"""
     directories = [
         "WORKING_FOLDER",
-        "WORKING_FOLDER/DiSanHanNomHue",
         "WORKING_FOLDER/NewProject"
     ]
     
