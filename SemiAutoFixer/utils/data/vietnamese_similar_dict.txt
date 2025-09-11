@@ -1,0 +1,102 @@
+a	â, ă, o, ô, ơ, c, d
+á	a
+à	a
+ả	a, đ
+ã	a, đ
+ạ	a
+ă	â, a, đ
+ắ	ă
+ằ	ă
+ẳ	ă
+ẵ	ă
+ặ	ă
+â	ă, a, đ
+ấ	â
+ầ	â
+ẩ	â
+ẫ	â
+ậ	â
+b	h, p, d, 6, k
+c	e, o, 0, a, g
+d	đ, a, b, o, 0, p
+đ	d, o, ô
+e	c, a, o, ê, g
+é	e
+è	e
+ẻ	e
+ẽ	e
+ê	e, a, â, ô, ơ, g
+ế	ê
+ề	ê
+ể	ê
+ễ	ê
+ệ	ê
+f	t, p, f
+g	q, y, p
+h	b, n, k, 6, p, li
+i	l, j, t, 1
+í	i
+ì	i
+ỉ	i
+ĩ	i
+ị	i
+j	i, y
+k	h, b, li
+l	i, 1
+m	n, u, w, ni, na, an, in
+n	m, u, v
+o	ô, ơ, a, c, e, q, 0, u, d
+ó	o
+ò	o
+ỏ	o
+õ	o
+ọ	o
+ô	o, ơ, ê, â, 0
+ố	ô
+ồ	ô
+ổ	ô
+ỗ	ô
+ộ	ô
+ơ	o, ô, ư, ơ, 0
+ớ	ơ
+ờ	ơ
+ở	ơ
+ỡ	ơ
+ợ	ơ
+p	b, d, g
+q	g, o
+r	s, n
+s	r, a
+t	f, l, 7
+u	ư, n, m, o, v, a
+ú	u
+ù	u
+ủ	u
+ũ	u
+ụ	u
+ư	u, ơ, v
+ứ	ư
+ừ	ư
+ử	ư
+ữ	ư
+ự	ư
+v	u, n, y
+w	m, u, ưu
+x	c
+y	g, v, u, p
+ý	y
+ỳ	y
+ỷ	y
+ỹ	y
+ỵ	y
+z	2
+0	o, c, d, q, 6, o
+1	i, l, t
+2	z
+3	e
+4	a
+5	s
+6	b, d, o, q, 0
+7	t, f
+8	b
+9	g

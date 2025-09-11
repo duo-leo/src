@@ -1,0 +1,10 @@
+vowel	tone_mark	new_vowel	new_tone_mark
+ô, â, ê	1		4
+ô, â, ê	2		4
+ô, â, ê			4, 1, 2
+	1		4, 3
+	2		4
+ă			4
+ơ		o	3
+ư		u	3
+ă		a	4
