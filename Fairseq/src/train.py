@@ -59,7 +59,7 @@ def main():
     options.add_optimization_args(parser)
     
     # Custom arguments
-    parser.add_argument('--base-model', type=str, default='facebook/fairseq-transformer',
+    parser.add_argument('--base-model', type=str, default='transformer_wmt_en_de',
                         help='Base model to use')
     parser.add_argument('--train-data', type=str, required=True,
                         help='Path to training data')
